@@ -10,7 +10,7 @@ namespace Tyuiu.MolchankinaAP.Sprint3.Task6.V8.Test
             DataService ds = new DataService();
             int startValue = 18;
             int stopValue = 28;
-            Assert.AreEqual(158, ds.GetSumTheDivisors(startValue, stopValue));
+            Assert.AreEqual(292, ds.GetSumTheDivisors(startValue, stopValue));
         }
     }
 }

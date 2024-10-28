@@ -5,6 +5,7 @@ namespace Tyuiu.MolchankinaAP.Sprint3.Task6.V8
     {
         static void Main(string[] args)
         {
+            
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");

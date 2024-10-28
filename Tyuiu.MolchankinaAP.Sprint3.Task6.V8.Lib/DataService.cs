@@ -5,18 +5,20 @@ namespace Tyuiu.MolchankinaAP.Sprint3.Task6.V8.Lib
     {
         public int GetSumTheDivisors(int startValue, int stopValue)
         {
-            int sumOfDivisors = 0;
-            for (int num = startValue; num <= stopValue; num++)
+            int x;
+            int sum = 0;
+            for (x = startValue; x <= stopValue; x++)
             {
-                for (int divisor = 2; divisor < num; divisor++)
+                for (int d = 2; d <= x; d++)
                 {
-                    if (num % divisor == 0)
+                    if (x % d == 0)
                     {
-                        sumOfDivisors += divisor;
+                        if (d > 11)
+                            sum += d;
                     }
                 }
             }
-            return sumOfDivisors;
+            return sum;
         }
     }
 }
