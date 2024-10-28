@@ -14,7 +14,7 @@ namespace Tyuiu.MolchankinaAP.Sprint3.Task7.V23.Test
             double[] expectedValues = new double[] { -2.5, -1.125, -0.083, 0.625, 2, 3, 0, -0.875, -1.917, -2.875, -3.75 };
             double[] actualValues = ds.GetMassFunction(startValue, stopValue);
 
-            Assert.AreEqual(expectedValues, actualValues, 3);
+            Assert.AreEqual(expectedValues, actualValues);
         }
     }
 }
