@@ -8,16 +8,11 @@ namespace Tyuiu.MolchankinaAP.Sprint3.Task2.V28.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            double expected = 0.2250160836594891;
-            double actual = ds.GetMultiplySeries(1, 9);
-            Assert.AreEqual(expected, actual, 0.00001); // Допустимая погрешность 0.00001
-        }
-        public void TestMethod2()
-        {
-            DataService ds = new DataService();
-            double expected = 0.5625;
-            double actual = ds.GetMultiplySeries(1, 5);
-            Assert.AreEqual(expected, actual, 0.00001);
+            int startValue = 1;
+            int stopValue = 9;
+            double res = ds.GetMultiplySeries(startValue, stopValue);
+            double wait = -15.642;
+            Assert.AreEqual(wait, res);
         }
     }
 }

@@ -9,11 +9,17 @@ namespace Tyuiu.MolchankinaAP.Sprint3.Task2.V28
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            double result = ds.GetMultiplySeries(1, 9);
+            int startValue = 1;
+            int stopValue = 9;
+            Console.WriteLine("Старт шага = " + startValue);
+            Console.WriteLine("Конец шага = " + stopValue);
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(result);
+
+            Console.WriteLine("Произведение ряда = " + ds.GetMultiplySeries(startValue, stopValue));
+
             Console.ReadKey();
         }
     }

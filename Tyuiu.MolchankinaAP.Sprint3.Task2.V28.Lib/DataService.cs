@@ -5,13 +5,15 @@ namespace Tyuiu.MolchankinaAP.Sprint3.Task2.V28.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double p = 1;
-            for (int k = stopValue; k >= startValue; k--) // Цикл от stopValue до startValue
+            int k = startValue;
+            double multiplySeries = 1;
+            double x = 1.8; // Используем фиксированное значение x
+            do
             {
-                p *= Math.Pow(2, k) / (k + 1); // Правильное вычисление элемента ряда
-            }
-            return p * Math.Cos(1.8);
-
+                multiplySeries *= Math.Pow(2, k) / (k + 1) * Math.Cos(x);
+                k++;
+            } while (k <= stopValue);
+            return Math.Round(multiplySeries, 3);
         }
     }
 }
