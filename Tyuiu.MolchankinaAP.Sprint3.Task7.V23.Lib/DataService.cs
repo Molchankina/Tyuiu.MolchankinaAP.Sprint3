@@ -22,7 +22,7 @@ namespace Tyuiu.MolchankinaAP.Sprint3.Task7.V23.Lib
             }
             else
             {
-                return Math.Round(4 - 2 * x + (2 + Math.Cos(x)) / (2 * x - 2), 3);
+                return Math.Round(4 - 2 * x + (2 + Math.Cos(x)) / (2 * x - 2), 2);
             }
         }
     }
